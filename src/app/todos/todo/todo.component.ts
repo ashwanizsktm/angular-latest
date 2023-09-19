@@ -11,7 +11,7 @@ import { Observable } from 'rxjs';
 
     changeDetection: ChangeDetectionStrategy.OnPush
     // comment the above line to see how change detetection makes angular so slow in performance.
-    // what the above line is doing is it actually takes this component form angular change detection 
+    // what the above line is doing is it actually takes away this component form angular change detection 
     // lifecycle.
 })
 
@@ -34,7 +34,7 @@ export class TodoComponent {
         ExpressionChangedAfterIthasBeenCheckedError: expression has changed after it was checked
     
         in parent component if the input changes the function checkRender will get called so to avoid this fn call
-        we'll use changedetection strategy
+        we'll use changedetection strategy.
          */
 
     changeText(): void {
@@ -44,7 +44,7 @@ export class TodoComponent {
     changeFilter() {
         this.todoSrv.filter$.next('Active');
     }
-    // the question is Observable is an object then how ot is getting changed. it's getting changed bcz we are just subscribing 
+    // the question is Observable is an object then how to is getting changed. it's getting changed bcz we are just subscribing 
     // the filter value in the template using async pipe & here we are changing the value using next.
 
 }

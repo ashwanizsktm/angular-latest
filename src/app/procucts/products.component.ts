@@ -18,15 +18,15 @@ export class ProductsComponent implements OnInit {
     // computed
     fullName = computed(() => this.firstName() + ' ' + this.lastName());
 
-    // setting signal alue
+    // setting signal values
     changeFirstName(fname: string) {
         this.firstName.set(fname)
     }
+
     // setting signal value
     changeLastName(lname: string) {
         this.lastName.set(lname);
     }
-
 
     // updating signals
     value = signal<number>(5);
@@ -48,8 +48,7 @@ export class ProductsComponent implements OnInit {
         this.userData.mutate(user => {
             user.name = 'John';
             user.class = "eleventh";
-        }
-        );
+        });
     }
 
     // effects:- basically we use effect to have a side effect to the existing work. let's set at above we are 
@@ -57,7 +56,7 @@ export class ProductsComponent implements OnInit {
 
     sideEffect = effect(() => {
         console.log('user name chnaged to' + ' ' + this.userData().name);
-        localStorage.setItem('name', + ' ' + this.userData().name);
+        localStorage.setItem('name', this.userData().name);
     })
 
 

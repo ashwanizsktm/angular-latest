@@ -26,7 +26,7 @@ export class TodosComponent implements OnInit {
         console.log("change text", target.value);
     }
 
-    // if we add anything in input box then as many times as we enter the text inside the todo component with checkRender will
+    // if we add anything in input box then as many times as we enter the text inside the todo component with checkRender fn will
     // get called.This is super weired. so to fix that we'll write the change detection stretegy in todo component.
 
     clickEvent() {
