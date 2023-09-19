@@ -1,27 +1,5 @@
-.products {
-    text-align: center;
-
-    h1 {
-        margin: 20px 0 20px 0;
-        font-size: 2rem;
-        color: #fff;
-    }
-
-    img {
-        margin: 20px;
-    }
-
-
-}
-
-h1 {
-    margin: 20px 0 20px 0;
-    font-size: 2rem;
-    color: #fff;
-}
-
 .input-box {
-    width: 100%;
+    width: 220px;
     height: 40px;
     border-radius: 10px;
     outline: none;
@@ -47,10 +25,4 @@ button {
     border: none;
     outline: none;
     cursor: pointer;
-}
-
-h2,
-h3 {
-    font-size: 1.5rem;
-    color: #fff;
 }

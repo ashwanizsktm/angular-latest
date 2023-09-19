@@ -4,12 +4,16 @@ import { BrowserModule } from "@angular/platform-browser";
 import { AppComponent } from "./app.component";
 import { CommonModule } from "@angular/common";
 import { AppRoutingModule } from "./app.routing.module";
+import { TodosComponent } from "./todos/todos.component";
+import { TodoComponent } from "./todos/todo/todo.component";
 
 @NgModule({
   declarations: [
-    AppComponent, 
+    AppComponent,
+    TodosComponent,
+    TodoComponent
   ],
-  
+
   imports: [
     BrowserModule,
     CommonModule,
@@ -19,4 +23,4 @@ import { AppRoutingModule } from "./app.routing.module";
   bootstrap: [AppComponent],
 })
 
-export class AppModule {}
+export class AppModule { }

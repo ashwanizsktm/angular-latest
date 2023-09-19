@@ -1,5 +1,41 @@
 <div class="products">
     <h1>Products</h1>
-    <img src="/assets/logo.svg"  height="120" width="130">
+    <img src="/assets/logo.svg" height="120" width="130">
     <img src="/assets/issuer-logo.svg" height="120" width="130">
 </div>
+
+<!-- Reading signlas -->
+<h1>Read signlas: {{name()}} </h1>
+
+<!-- signla with string -->
+<div>
+    <div style="display: flex; margin: 40px 0;">
+        <div style="display: flex; align-items: center;">
+            <div>
+                <input type="text" [value]="firstName()" #fname class="input-box" /> <br>
+                <button (click)="changeFirstName(fname.value)">update firstname</button>
+            </div>
+            <div style="margin-left: 20px;">
+                <input type="text" value="{{ lastName() }}" #lname class="input-box" /> <br>
+                <button (click)="changeLastName(lname.value)">update lastName</button>
+            </div>
+            <div style="margin-left: 20px;">
+                <h2>{{fullName()}}</h2>
+                <h3>Displaying Full Name</h3>
+            </div>
+        </div>
+    </div>
+
+    <!-- updating signal value -->
+    <div>
+        <button (click)="decrement()">minus-</button>
+        <span style="color: #fff; font-size: 1.3rem;display: inline-block; margin:0 10px;">{{value()}}</span>
+        <button (click)="increment()">plus+</button>
+    </div>
+
+    <!-- mutating signals -->
+    <div style="margin-top: 20px; color: #fff;">
+        <p>name: {{userData().name}} </p>
+        <p>class: {{userData().class}} </p>
+        <button (click)="mutateUser()">mutate</button>
+    </div>

@@ -1,0 +1,8 @@
+<todo [todo]="todo" *ngFor="let todo of todosData" />
+
+<div>
+    <button (click)="clickEvent()">click me</button> <br>
+    <input type="text" class="input-box" (keyup)="changeText($event)" />
+</div>
+
+<button (click)="changeTodosArrayData()">change todos Array</button> <br>

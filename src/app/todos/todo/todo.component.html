@@ -1,0 +1,10 @@
+<ul>
+    <li>{{todo.id}}</li>
+    <li>{{todo.activity}}</li>
+    <li>checkRender: {{ checkRender()}}</li>
+</ul>
+<button (click)="changeText()">Change text</button>
+
+<h2>Change detection with streams</h2>
+<h2>{{filter$ | async}}</h2>
+<button (click)="changeFilter()">change filter</button>
