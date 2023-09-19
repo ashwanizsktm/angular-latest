@@ -1,0 +1,22 @@
+.app {
+    h1 {
+        color: #fff;
+        margin: 0;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .btn-wrap {
+        text-align: center;
+
+        button {
+            border: none;
+            outline: none;
+            padding: 8px 15px;
+            background-color: maroon;
+            color: #fff;
+            margin: 10px;
+            cursor: pointer;
+        }
+    }
+}
