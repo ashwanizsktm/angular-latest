@@ -1,6 +1,6 @@
-<h1>Posts component</h1>
-<h1 *ngIf="isLoading$ | async">Loading....</h1>
-<h1 *ngFor="let post of posts$ | async">
+<h2>All posts</h2>
+<h2 *ngIf="isLoading$ | async">Loading....</h2>
+<h2 *ngFor="let post of posts$ | async">
     {{post.title}}
-</h1>
-<h1 *ngIf="isError$"> {{isError$ | async}} </h1>
+</h2>
+<h2 *ngIf="isError$"> {{isError$ | async}} </h2>
