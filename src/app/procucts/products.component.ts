@@ -66,4 +66,18 @@ export class ProductsComponent implements OnInit {
     }
     ngOnInit(): void {
     }
+    filtered:any[] = [];
+
+    dataList  = [ 
+        {id: 1, text: 'Ashwani'},
+        {id: 2, text: 'John'},
+        {id: 3, text: 'Jane'},
+        {id: 4, text: 'Amit'},
+        {id: 5, text: 'Ramesh'}
+    ]
+    serchData(event: Event) {
+        this.filtered = []
+        const value = (event.target as HTMLInputElement).value;
+        this.filtered = this.dataList.filter((data) => data.text.toLowerCase() === value);
+    }
 }

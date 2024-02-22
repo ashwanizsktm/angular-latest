@@ -8,7 +8,6 @@ import { Observable } from 'rxjs';
     templateUrl: './todo.component.html',
     styleUrls: ['./todo.component.scss'],
     providers: [TodoService],
-
     changeDetection: ChangeDetectionStrategy.OnPush
     // comment the above line to see how change detetection makes angular so slow in performance.
     // what the above line is doing is it actually takes away this component form angular change detection 

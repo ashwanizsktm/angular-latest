@@ -7,8 +7,6 @@ import { TodosInterface } from './todos.interface';
     styleUrls: ['./todos.component.scss']
 })
 
-
-
 export class TodosComponent implements OnInit {
     ngOnInit(): void {
     }

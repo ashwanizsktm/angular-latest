@@ -39,3 +39,8 @@
         <p>class: {{userData().class}} </p>
         <button (click)="mutateUser()">mutate</button>
     </div>
+
+    <div style="margin: 40px;"> 
+        <input type="text" placeholder="search" style="padding: 10px;" (keyup)="serchData($event)">
+        <div *ngFor="let data of dataList" style="color: #fff;"> {{data.text}}</div>
+    </div>

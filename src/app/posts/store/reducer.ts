@@ -1,6 +1,7 @@
 import { createReducer, on } from "@ngrx/store";
 import { PostStateInterface } from "../types/PostState.interface";
 import *as PostsActions from './actions';
+
 export const initialState: PostStateInterface = {
     isLoading: false,
     posts: [],

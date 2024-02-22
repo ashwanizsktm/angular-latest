@@ -2,7 +2,9 @@ import { Injectable } from "@angular/core";
 import { Observable, delay, of } from "rxjs";
 import { PostInterface } from "../types/PostInterface";
 
-@Injectable()
+@Injectable({
+    providedIn:'root'
+})
 
 export class PostsService {
     getPosts(): Observable<PostInterface[]> {
